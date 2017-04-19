@@ -14,9 +14,6 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 // Index route
-app.get('/', (req, res) => {
-  res.send('1190484882')
-})
 
 // Facebook verification
 app.get('/webhook', (req, res) =>{
