@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 })
 
 // Facebook verification
-app.get('/webhook/', (req, res) =>{
+app.get('/webhook', (req, res) =>{
   if(req.query['hub.verify_token'] === 'aPasswordThatWillBeSet'){
     res.send(req.query['hub.challenge'])
   }
