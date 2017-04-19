@@ -1,0 +1,19 @@
+{
+  "name": "messenger-echo-bot",
+  "version": "1.0.0",
+  "description": "echo user input",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finalwombat/messenger-echo-bot.git"
+  },
+  "author": "Jay Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finalwombat/messenger-echo-bot/issues"
+  },
+  "homepage": "https://github.com/finalwombat/messenger-echo-bot#readme"
+}
