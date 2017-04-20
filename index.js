@@ -122,5 +122,5 @@ function callSendAPI(messageData){
 }
 
 app.listen(app.get('port'), () => {
-  console.log('running on port', app.get('port'))
+  console.log('running on heroku port', app.get('port'))
 })
