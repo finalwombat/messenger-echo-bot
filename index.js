@@ -24,9 +24,10 @@ app.get('/', (req, res) => {
 app.get('/webhook', (req, res) =>{
   console.log('get');
   if(req.query['hub.verify_token'] === 'aPasswordThatWillBeSet'){
-    res.send(req.query['hub.challenge'])
+    res.status(200).send(req.query['hub.challenge'])
   }
   res.send('Error, wrong token')
+  res.sendStatus(403)
 })
 
 app.post('/webhook', (req, res) => {
