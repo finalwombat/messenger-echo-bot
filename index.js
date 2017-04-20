@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 
 // Index route
 app.get('/', (req, res) => {
-  res.send('1190484882')
+  res.send('Hello, I am a messenger bot')
 })
 
 // Facebook verification
