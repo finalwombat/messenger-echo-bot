@@ -90,7 +90,7 @@ function sendGenericMessage(recipientID, messageText){
       id: recipientID
     },
     message: {
-      attchment: {
+      attachment: {
         type: "template",
         payload: {
           template_type: "generic",
