@@ -22,6 +22,7 @@ app.get('/', (req, res) => {
 
 // Facebook verification
 app.get('/webhook', (req, res) =>{
+  console.log('get');
   if(req.query['hub.verify_token'] === 'aPasswordThatWillBeSet'){
     res.send(req.query['hub.challenge'])
   }
@@ -29,6 +30,7 @@ app.get('/webhook', (req, res) =>{
 })
 
 app.post('/webhook', (req, res) => {
+  console.log('post')
   var data = req.body
 
   // Make sure this is a page subscription
